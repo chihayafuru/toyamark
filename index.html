@@ -326,8 +326,8 @@
 
 
     
+    <section>
         <section >
-            
             <h2><a id="user-content-コードメトリクス計測ツール" class="anchor" href="#コードメトリクス計測ツール" aria-hidden="true"></a>コードメトリクス計測ツール</h2>
 <h3><a id="user-content-静的コード解析ツール" class="anchor" href="#静的コード解析ツール" aria-hidden="true"></a>静的コード解析ツール</h3>
 <ul>
@@ -337,14 +337,9 @@
 </ul>
 
             </section>
-    
-
-
-
-    
-        <section >
-            
-            <h2><a id="user-content-一般的なツールでは測れない" class="anchor" href="#一般的なツールでは測れない" aria-hidden="true"></a>一般的なツールでは測れない</h2>
+        
+            <section >
+                <h2><a id="user-content-一般的なツールでは測れない" class="anchor" href="#一般的なツールでは測れない" aria-hidden="true"></a>一般的なツールでは測れない</h2>
 <ol>
 <li>バグが見つかってからコード品質計測</li>
 <li>計測対象（バグが見つかったコード）に<br>合わせて『<strong>モノサシ</strong>（計測基準）』を<br>カスタマイズ</li>
@@ -352,6 +347,9 @@
 </ol>
 
             </section>
+        
+
+    </section>
     
 
 
@@ -400,8 +398,8 @@
 
 
     
+    <section>
         <section >
-            
             <h3><a id="user-content-計測の具体例" class="anchor" href="#計測の具体例" aria-hidden="true"></a>計測の具体例</h3>
 <p>const修飾 (定数宣言) を途中で外す悪弊が蔓延</p>
 <pre><code class="language-c">const char the_parameters[][] = {
@@ -422,14 +420,9 @@ int bar (char* parameters) {
 </code></pre>
 
             </section>
-    
-
-
-
-    
-        <section >
-            
-            <h3><a id="user-content-この件で何が起きる？-起きない？" class="anchor" href="#この件で何が起きる？-起きない？" aria-hidden="true"></a>この件で何が起きる？ 起きない？</h3>
+        
+            <section >
+                <h3><a id="user-content-この件で何が起きる？-起きない？" class="anchor" href="#この件で何が起きる？-起きない？" aria-hidden="true"></a>この件で何が起きる？ 起きない？</h3>
 <h4><a id="user-content-《問題が発生しないケース》" class="anchor" href="#《問題が発生しないケース》" aria-hidden="true"></a>《問題が発生しないケース》</h4>
 <ul>
 <li>const修飾を外した呼出先関数で<br>ポインタの参照先を書き換えない。</li>
@@ -437,14 +430,9 @@ int bar (char* parameters) {
 <p>（だったら定数のままで渡せばいいのに…）</p>
 
             </section>
-    
-
-
-
-    
-        <section >
-            
-            <h3><a id="user-content-この件で何が起きる？-起きない？-1" class="anchor" href="#この件で何が起きる？-起きない？-1" aria-hidden="true"></a>この件で何が起きる？ 起きない？</h3>
+        
+            <section >
+                <h3><a id="user-content-この件で何が起きる？-起きない？-1" class="anchor" href="#この件で何が起きる？-起きない？-1" aria-hidden="true"></a>この件で何が起きる？ 起きない？</h3>
 <h4><a id="user-content-《問題が発生するケース》" class="anchor" href="#《問題が発生するケース》" aria-hidden="true"></a>《問題が発生するケース》</h4>
 <p>constだったポインタ参照先を書き換え！</p>
 <ol>
@@ -469,6 +457,9 @@ int bar (char* parameters) {
 </ol>
 
             </section>
+        
+
+    </section>
     
 
 
@@ -632,8 +623,8 @@ end
 
 
     
+    <section>
         <section >
-            
             <h3><a id="user-content-rubyスクリプトの実行結果の例" class="anchor" href="#rubyスクリプトの実行結果の例" aria-hidden="true"></a>Rubyスクリプトの実行結果の例</h3>
 <br>
 <pre><code>$ ruby const_counter.rb
@@ -650,14 +641,9 @@ src/proc.c,         1
 <p>【註】 <em>mruby</em> のソースコードを例にしています</p>
 
             </section>
-    
-
-
-
-    
-        <section >
-            
-            <h3><a id="user-content-ヒットが上手くいったコードの例" class="anchor" href="#ヒットが上手くいったコードの例" aria-hidden="true"></a>ヒットが上手くいったコードの例</h3>
+        
+            <section >
+                <h3><a id="user-content-ヒットが上手くいったコードの例" class="anchor" href="#ヒットが上手くいったコードの例" aria-hidden="true"></a>ヒットが上手くいったコードの例</h3>
 <pre><code class="language-c">static const mrb_code each_iseq[] = {
   OP_ENTER, 0x0, 0x00, 0x1,  /* OP_ENTER     0:0:0:0:0:0:1 */
   OP_JMPIF, 0x1, 0x0, 19,    /* OP_JMPIF     R1  19 */
@@ -668,14 +654,9 @@ src/proc.c,         1
 </code></pre>
 
             </section>
-    
-
-
-
-    
-        <section >
-            
-            <h3><a id="user-content-ミスヒットしたコードの例" class="anchor" href="#ミスヒットしたコードの例" aria-hidden="true"></a>ミスヒットしたコードの例</h3>
+        
+            <section >
+                <h3><a id="user-content-ミスヒットしたコードの例" class="anchor" href="#ミスヒットしたコードの例" aria-hidden="true"></a>ミスヒットしたコードの例</h3>
 <pre><code class="language-c">static const char *
 char_adjust(const char *beg, const char *end, const char *ptr)
 {
@@ -689,6 +670,9 @@ char_adjust(const char *beg, const char *end, const char *ptr)
 </ul>
 
             </section>
+        
+
+    </section>
     
 
 
